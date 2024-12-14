@@ -20,6 +20,7 @@ class AdminRedirectIfAuthenticated
         
             if (Auth::guard('admins')->check()) {
                 // return redirect(RouteServiceProvider::HOME);
+                return redirect()->route('admin.dashboard');
             }
         
 
