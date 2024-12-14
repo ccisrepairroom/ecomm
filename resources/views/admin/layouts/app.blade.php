@@ -40,8 +40,8 @@
 							<img src="{{ asset('admin-assets/img/avatar5.png') }}" class='img-circle elevation-2' width="40" height="40" alt="">
 						</a>
 						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-3">
-							<h4 class="h4 mb-0"><strong>Mohit Singh</strong></h4>
-							<div class="mb-3">example@example.com</div>
+							<h4 class="h4 mb-0"><strong>Claire Nakila</strong></h4>
+							<div class="mb-3">clairenakila18@gmail.com</div>
 							<div class="dropdown-divider"></div>
 							<a href="#" class="dropdown-item">
 								<i class="fas fa-user-cog mr-2"></i> Settings								
@@ -64,7 +64,7 @@
 				<!-- Brand Logo -->
 				<a href="#" class="brand-link">
 					<img src="{{ asset('admin-assets/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-					<span class="brand-text font-weight-light">LARAVEL SHOP</span>
+					<span class="brand-text font-weight-light">SM SUPERMARKET</span>
 				</a>
 				<!-- Sidebar -->
 				<div class="sidebar">
@@ -145,68 +145,7 @@
          	</aside>
 			<!-- Content Wrapper. Contains page content -->
 			<div class="content-wrapper">
-				<!-- Content Header (Page header) -->
-				<section class="content-header">					
-					<div class="container-fluid">
-						<div class="row mb-2">
-							<div class="col-sm-6">
-								<h1>Dashboard</h1>
-							</div>
-							<div class="col-sm-6">
-								
-							</div>
-						</div>
-					</div>
-					<!-- /.container-fluid -->
-				</section>
-				<!-- Main content -->
-				<section class="content">
-					<!-- Default box -->
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-lg-4 col-6">							
-								<div class="small-box card">
-									<div class="inner">
-										<h3>150</h3>
-										<p>Total Orders</p>
-									</div>
-									<div class="icon">
-										<i class="ion ion-bag"></i>
-									</div>
-									<a href="#" class="small-box-footer text-dark">More info <i class="fas fa-arrow-circle-right"></i></a>
-								</div>
-							</div>
-							
-							<div class="col-lg-4 col-6">							
-								<div class="small-box card">
-									<div class="inner">
-										<h3>50</h3>
-										<p>Total Customers</p>
-									</div>
-									<div class="icon">
-										<i class="ion ion-stats-bars"></i>
-									</div>
-									<a href="#" class="small-box-footer text-dark">More info <i class="fas fa-arrow-circle-right"></i></a>
-								</div>
-							</div>
-							
-							<div class="col-lg-4 col-6">							
-								<div class="small-box card">
-									<div class="inner">
-										<h3>$1000</h3>
-										<p>Total Sale</p>
-									</div>
-									<div class="icon">
-										<i class="ion ion-person-add"></i>
-									</div>
-									<a href="javascript:void(0);" class="small-box-footer">&nbsp;</a>
-								</div>
-							</div>
-						</div>
-					</div>					
-					<!-- /.card -->
-				</section>
-				<!-- /.content -->
+				@yield('content')
 			</div>
 			<!-- /.content-wrapper -->
 			<footer class="main-footer">
@@ -224,5 +163,6 @@
         <script src="{{ asset('admin-assets/js/adminlte.min.js') }}"></script>		
 		<!-- AdminLTE for demo purposes -->
 		<!-- <script src="js/demo.js"></script> -->
+         @yield('customJs')
 	</body>
 </html>
